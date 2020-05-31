@@ -179,7 +179,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-05-31 14:09:11 / 修改时间：15:22:40" itemprop="dateCreated datePublished" datetime="2020-05-31T14:09:11+08:00">2020-05-31</time>
+              <time title="创建时间：2020-05-31 14:09:11 / 修改时间：15:34:02" itemprop="dateCreated datePublished" datetime="2020-05-31T14:09:11+08:00">2020-05-31</time>
             </span>
 
           
@@ -194,7 +194,7 @@
 
       
           <p>开通博客让自己重温了用linux指令做事的风格，已经离开linux界面十来年，对于用键盘输入指令做事而不是通过鼠标已经很不熟悉了，故将这次用到的指令记下来，以备不时查询。</p>
-<p>1、创建Github 域名和空间<br>按照官网指示</p>
+<h1 id="创建过程"><a href="#创建过程" class="headerlink" title="创建过程"></a>创建过程</h1><p>1、创建Github 域名和空间<br>按照官网指示</p>
 <p>2、安装Git, Nodejs, Hexo<br>检查是否安装Git<br>$ git –version<br>如果没有出现版本号就需要安装，win10直接下载Git软件安装就可以<br><a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a><br>nodejs<br>win10在官网下载安装 <a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">https://nodejs.org/zh-cn/</a><br>安装好后用CMD命令检查是否成功<br>node -v 检查node版本<br>npm  -v 检查npm版本<br>hexo<br>安装hexo<br>$ npm install -g hexo-cli<br>检查hexo是否正确安装上<br>$ hexo –version</p>
 <p>3、创建项目<br>$ hexo init 项目名称，比如项目名称是test 那就是<br>$ hexo init test，用hexo初始化test目录，生成相关配置。</p>
 <p>4、安装主题<br>$ cd test 进入项目目录<br>在<a href="https://hexo.io/themes/上有一部分免费主题，clone了下面这个很受欢迎的next主题。" target="_blank" rel="noopener">https://hexo.io/themes/上有一部分免费主题，clone了下面这个很受欢迎的next主题。</a><br>$ git clone <a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">https://github.com/theme-next/hexo-theme-next</a></p>
@@ -204,10 +204,8 @@
 <p>8、自动发布<br>$ npm install hexo-deployer-git –save 安装hexo-deployer-git自动发布工具<br>$ hexo clean #清楚之前生成的东西，可用可不用<br>$ hexo g     #生成静态文章<br>$ hexo d     #部署文章<br>也可以直接用<br>$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</p>
 <p>9、设置SSH<br>看网上的教程这一步是在前面的，我是在发布的时候才发现自己没有设置这步。参考网上另一个教程，做了ssh设置。<br>在Git Bash输入以下指令，检查是否已经存在了SSH keys。<br>ls -al ~/.ssh<br>如果存在就删除.ssh文件夹所有文件<br>输入github的用户名和注册邮箱<br>$ git config –global user.name “yourname”<br>$ git config –global user.email “youremail”<br>检查是否正确<br>$ git config user.name<br>$ git config user.email<br>创建SSH<br>$ ssh-keygen -t rsa -C “youremail”<br>$ clip &lt; ~/.ssh/id_rsa.pub 复制rsa.pub的信息<br>在GitHub的setting中，找到SSH keys的设置选项，点击New SSH key<br>把id_rsa.pub里面的信息复制进去<br>检查是否成功<br>ssh -T <a href="mailto:git@github.com">git@github.com</a></p>
 <p>10、浏览器查看：<a href="http://username.github.io/" target="_blank" rel="noopener">http://username.github.io/</a></p>
-<p>hexo指令：<br>#用于生成静态文件<br>hexo generate<br>hexo g #简写<br>#情况pubilc文件<br>hexo clean<br>#启动服务预览<br>hexo s<br>hexo server<br>#部署站点，本地生成.deploy_git文件。并建编译后的文件上传至githab</p>
-<h2 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h2><p>hexo new post title</p>
-<h2 id="一键部署"><a href="#一键部署" class="headerlink" title="一键部署"></a>一键部署</h2><p>hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy</p>
-<p>linux常用指令<br>文件和目录<br>cd /home 进入 ‘/ home’ 目录’<br>cd .. 返回上一级目录<br>cd ../.. 返回上两级目录<br>cd 进入个人的主目录<br>cd - 返回上次所在的目录<br>pwd 显示工作路径<br>ls 查看目录中的文件<br>ls -F 查看目录中的文件<br>ls -l 显示文件和目录的详细资料<br>ls -a 显示隐藏文件<br>ls <em>[0-9]</em> 显示包含数字的文件名和目录名<br>tree 显示文件和目录由根目录开始的树形结构<br>lstree 显示文件和目录由根目录开始的树形结构<br>mkdir dir1 创建一个叫做 ‘dir1’ 的目录’<br>mkdir dir1 dir2 同时创建两个目录<br>mkdir -p /tmp/dir1/dir2 创建一个目录树<br>rm -f file1 删除一个叫做 ‘file1’ 的文件’<br>rmdir dir1 删除一个叫做 ‘dir1’ 的目录’<br>rm -rf dir1 删除一个叫做 ‘dir1’ 的目录并同时删除其内容<br>rm -rf dir1 dir2 同时删除两个目录及它们的内容<br>mv dir1 new_dir 重命名/移动 一个目录<br>cp file1 file2 复制一个文件<br>cp dir/* . 复制一个目录下的所有文件到当前工作目录<br>cp -a /tmp/dir1 . 复制一个目录到当前工作目录<br>cp -a dir1 dir2 复制一个目录<br>cp -r dir1 dir2 复制一个目录及子目录</p>
+<h1 id="hexo指令"><a href="#hexo指令" class="headerlink" title="hexo指令"></a>hexo指令</h1><p>用于生成静态文件<br>hexo generate<br>hexo g #简写<br>情况pubilc文件<br>hexo clean<br>启动服务预览<br>hexo s<br>hexo server<br>部署站点，本地生成.deploy_git文件。并建编译后的文件上传至githab<br>新建文章<br>hexo new post title<br> 一键部署<br>hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy</p>
+<h1 id="linux常用指令"><a href="#linux常用指令" class="headerlink" title="linux常用指令"></a>linux常用指令</h1><p>文件和目录<br>cd /home 进入 ‘/ home’ 目录’<br>cd .. 返回上一级目录<br>cd ../.. 返回上两级目录<br>cd 进入个人的主目录<br>cd - 返回上次所在的目录<br>pwd 显示工作路径<br>ls 查看目录中的文件<br>ls -F 查看目录中的文件<br>ls -l 显示文件和目录的详细资料<br>ls -a 显示隐藏文件<br>ls <em>[0-9]</em> 显示包含数字的文件名和目录名<br>tree 显示文件和目录由根目录开始的树形结构<br>lstree 显示文件和目录由根目录开始的树形结构<br>mkdir dir1 创建一个叫做 ‘dir1’ 的目录’<br>mkdir dir1 dir2 同时创建两个目录<br>mkdir -p /tmp/dir1/dir2 创建一个目录树<br>rm -f file1 删除一个叫做 ‘file1’ 的文件’<br>rmdir dir1 删除一个叫做 ‘dir1’ 的目录’<br>rm -rf dir1 删除一个叫做 ‘dir1’ 的目录并同时删除其内容<br>rm -rf dir1 dir2 同时删除两个目录及它们的内容<br>mv dir1 new_dir 重命名/移动 一个目录<br>cp file1 file2 复制一个文件<br>cp dir/* . 复制一个目录下的所有文件到当前工作目录<br>cp -a /tmp/dir1 . 复制一个目录到当前工作目录<br>cp -a dir1 dir2 复制一个目录<br>cp -r dir1 dir2 复制一个目录及子目录</p>
 
       
     </div>
@@ -252,7 +250,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-05-31 13:38:45 / 修改时间：14:06:32" itemprop="dateCreated datePublished" datetime="2020-05-31T13:38:45+08:00">2020-05-31</time>
+              <time title="创建时间：2020-05-31 13:38:45 / 修改时间：15:30:48" itemprop="dateCreated datePublished" datetime="2020-05-31T13:38:45+08:00">2020-05-31</time>
             </span>
 
           
@@ -266,65 +264,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>一直想着建自己的博客，某天在网上看到了这一篇“5分钟搭建免费个人博客”（<a href="https://www.jianshu.com/p/4eaddcbe4d12），然后就心动入坑，结果花了三天才搞定。" target="_blank" rel="noopener">https://www.jianshu.com/p/4eaddcbe4d12），然后就心动入坑，结果花了三天才搞定。</a><br>在github上用hexo搭建博客的攻略网上很多，基本上按照简书这位的步骤就可以了。<br>1、创建Github域名和空间，这一步比较简单，按照github的指南去做就好。<br>2、安装Git、Nodjes、hexo。安装命令网上都有，win10可以通过下载安装程序来安装，或者通过官网指导安装。<br>3、编写发布。<br>这个环节因为不熟悉git bash指令，有个小问题折腾了三个晚上，在用$ hexo s测试静态网页的时候，无论如何都打不开<a href="https://localhost:4000，按照网上各种攻略改端口，改网页设置，折腾到最后发现原来每次我都是发布$">https://localhost:4000，按照网上各种攻略改端口，改网页设置，折腾到最后发现原来每次我都是发布$</a> hexo s之后就顺手用“ctrl+c” 退出测试了，自然怎么改都看不到静态页面了。<br>4、Markdown编写博文。到了这里还要下载一个软件已经不耐烦了，作为一个非编程人员，向来是指望下载一个工具就能搞定一件事，因为每件工具都是需要时间精力去学习使用的。现在还要下载第四个，但是已经到了这一步，还是试试吧，markdown的使用目前还不熟练。<br>5、动态发布。这篇博文里少了设置 ssh key 这一步，网上重新找了一篇攻略完成key的设置，基本都是照着攻略输指令。但是动态发布后github更新有延迟，无法立即刷新网站，这个也是试了一个晚上才发现的，刚开始还以为自己指令输错了。<br>6、新建文档。可能是版本问题，或者是自己对linux命令不熟悉，用“hexo new 文件名” 没法新建文档，后来改成“hexo new post 文件名”就好了。<br>7、更改主题。更改主题的时候发现了语言的问题，后来发现是版本的设置不一样，根目录下面的_config.yml语言设置需要和主题里面的语言文件同名才行。另外主题目录下面的_config.yml也可以做一些设定。<br>8、更多的还是要慢慢探索，很多linux命令已经忘了，重新捡起来。</p>
+          <p>一直想着建自己的博客，某天在网上看到了这一篇“5分钟搭建免费个人博客”（<a href="https://www.jianshu.com/p/4eaddcbe4d12" target="_blank" rel="noopener">https://www.jianshu.com/p/4eaddcbe4d12</a>),<br>然后就心动入坑，结果花了三天才搞定。<br>在github上用hexo搭建博客的攻略网上很多，基本上按照简书这位的步骤就可以了。<br>1、创建Github域名和空间，这一步比较简单，按照github的指南去做就好。<br>2、安装Git、Nodjes、hexo。安装命令网上都有，win10可以通过下载安装程序来安装，或者通过官网指导安装。<br>3、编写发布。<br>这个环节因为不熟悉git bash指令，有个小问题折腾了三个晚上，在用$ hexo s测试静态网页的时候，无论如何都打不开<br><a href="https://localhost:4000，">https://localhost:4000，</a><br>按照网上各种攻略改端口，改网页设置，折腾到最后发现原来每次我都是发布$ hexo s之后就顺手用“ctrl+c” 退出测试了，自然怎么改都看不到静态页面了。<br>4、Markdown编写博文。到了这里还要下载一个软件已经不耐烦了，作为一个非编程人员，向来是指望下载一个工具就能搞定一件事，因为每件工具都是需要时间精力去学习使用的。现在还要下载第四个，但是已经到了这一步，还是试试吧，markdown的使用目前还不熟练。<br>5、动态发布。这篇博文里少了设置 ssh key 这一步，网上重新找了一篇攻略完成key的设置，基本都是照着攻略输指令。但是动态发布后github更新有延迟，无法立即刷新网站，这个也是试了一个晚上才发现的，刚开始还以为自己指令输错了。<br>6、新建文档。可能是版本问题，或者是自己对linux命令不熟悉，用“hexo new 文件名” 没法新建文档，后来改成“hexo new post 文件名”就好了。<br>7、更改主题。更改主题的时候发现了语言的问题，后来发现是版本的设置不一样，根目录下面的_config.yml语言设置需要和主题里面的语言文件同名才行。另外主题目录下面的_config.yml也可以做一些设定。<br>8、更多的还是要慢慢探索，很多linux命令已经忘了，重新捡起来。</p>
 
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/31/first/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Jinneye">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="jinneye的空间">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/31/first/" class="post-title-link" itemprop="url">first</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-05-31 13:38:28" itemprop="dateCreated datePublished" datetime="2020-05-31T13:38:28+08:00">2020-05-31</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
       
     </div>
 
@@ -464,7 +405,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
