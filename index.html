@@ -1,92 +1,196 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh- CN">
 <head>
-  <meta charset="utf-8">
-  
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"jinneye.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
   <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<meta property="og:title" content="jinneye的小屋">
+<meta property="og:url" content="http://jinneye.github.io/index.html">
+<meta property="og:site_name" content="jinneye的小屋">
+<meta property="og:locale">
+<meta property="article:author" content="jinneye">
 <meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<link rel="canonical" href="http://jinneye.github.io/">
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh- CN'
+  };
+</script>
+
+  <title>jinneye的小屋</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">jinneye的小屋</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">自由翱翔</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
       
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
   
-    <article id="post-nobelphysics" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/02/15/nobelphysics/" class="article-date">
-  <time datetime="2022-02-15T08:24:34.000Z" itemprop="datePublished">2022-02-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/02/15/nobelphysics/">nobel physics</a>
-    </h1>
-  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh- CN">
+    <link itemprop="mainEntityOfPage" href="http://jinneye.github.io/2022/02/15/nobelphysics/">
 
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="jinneye">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jinneye的小屋">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/02/15/nobelphysics/" class="post-title-link" itemprop="url">nobel physics</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-02-15 16:24:34 / Modified: 16:28:18" itemprop="dateCreated datePublished" datetime="2022-02-15T16:24:34+08:00">2022-02-15</time>
+            </span>
+
+          
+
+        </div>
       </header>
+
     
-    <div class="article-entry" itemprop="articleBody">
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-        <p>1、1901年：威尔姆·康拉德·伦琴（德国）发现X射线<br>2、1902年：亨德瑞克·安图恩·洛伦兹（荷兰）、塞曼（荷兰）关于磁场对辐射现象影响的研究<br>3、1903年：安东尼·亨利·贝克勒尔（法国）发现天然放射性；皮埃尔·居里（法国）、玛丽·居里（波兰裔法国人）发现并研究放射性元素钋和镭<br>4、1904年：瑞利（英国）气体密度的研究和发现氩<br>5、1905年：伦纳德（德国）关于阴极射线的研究<br>6、1906年：约瑟夫·汤姆生（英国）对气体放电理论和实验研究作出重要贡献并发现电子<br>7、1907年：迈克尔逊（美国）发明光学干涉仪并使用其进行光谱学和基本度量学研究<br>8、1908年：李普曼（法国）发明彩色照相干涉法（即李普曼干涉定律）<br>9、1909年：伽利尔摩·马克尼（意大利）、布劳恩（德国）发明和改进无线电报；理查森（英国）从事热离子现象的研究，特别是发现理查森定律<br>10、1910年：范德华（荷兰）关于气态和液态方程的研究<br>11、1911年：维恩（德国）发现热辐射定律<br>12、1912年：达伦（瑞典）发明可用于同燃点航标、浮标气体蓄电池联合使用的自动调节装置<br>13、1913年：卡末林－昂内斯（荷兰）关于低温下物体性质的研究和制成液态氦<br>14、1914年：马克斯·凡·劳厄（德国）发现晶体中的X射线衍射现象<br>15、1915年：威廉·亨利·布拉格、威廉·劳伦斯·布拉格（英国）用X射线对晶体结构的研究<br>16、1916年：未颁奖<br>17、1917年：查尔斯·格洛弗·巴克拉（英国）发现元素的次级X辐射特性<br>18、1918年：马克斯·卡尔·欧内斯特·路德维希·普朗克（德国）对确立量子论作出巨大贡献<br>19、1919年：斯塔克（德国）发现极隧射线的多普勒效应以及电场作用下光谱线的分裂现象<br>20、1920年：纪尧姆（瑞士）发现镍钢合金的反常现象及其在精密物理学中的重要性<br>21、1921年：阿尔伯特·爱因斯坦（德国）他对数学物理学的成就，特别是光电效应定律的发现<br>22、1922年：尼尔斯·亨利克·大卫·玻尔（丹麦）关于原子结构以及原子辐射的研究<br>23、1923年：罗伯特·安德鲁·密立根（美国）关于基本电荷的研究以及验证光电效应<br>24、1924年：西格巴恩（瑞典）发现X射线中的光谱线<br>25、1925年：弗兰克·赫兹（德国）发现原子和电子的碰撞规律<br>26、1926年：佩兰（法国）研究物质不连续结构和发现沉积平衡<br>27、1927年：康普顿（美国）发现康普顿效应；威尔逊（英国）发明了云雾室，能显示出电子穿过空气的径迹<br>28、1928年：理查森（英国）研究热离子现象，并提出理查森定律<br>29、1929年：路易·维克多·德布罗意（法国）发现电子的波动性<br>30、1930年：拉曼（印度）研究光散射并发现拉曼效应<br>31、1931年：未颁奖<br>32、1932年：维尔纳·海森伯（德国）在量子力学方面的贡献<br>33、1933年：埃尔温·薛定谔（奥地利）创立波动力学理论；保罗·阿德里·莫里斯·狄拉克（英国）提出狄拉克方程和空穴理论<br>34、1934年：未颁奖<br>35、1935年：詹姆斯·查德威克（英国）发现中子<br>36、1936年：赫斯（奥地利）发现宇宙射线；安德森（美国）发现正电子<br>37、1937年：戴维森（美国）、乔治·佩杰特·汤姆生（英国）发现晶体对电子的衍射现象<br>38、1938年：恩利克·费米（意大利）发现由中子照射产生的新放射性元素并用慢中子实现核反应<br>39、1939年：欧内斯特·奥兰多·劳伦斯（美国）发明回旋加速器，并获得人工放射性元素<br>40、1940—1942年：未颁奖<br>41、1943年：斯特恩（美国）开发分子束方法和测量质子磁矩<br>42、1944年：拉比（美国）发明核磁共振法<br>43、1945年：沃尔夫冈·E·泡利（奥地利）发现泡利不相容原理<br>44、1946年：布里奇曼（美国）发明获得强高压的装置，并在高压物理学领域作出发现<br>45、1947年：阿普尔顿（英国）高层大气物理性质的研究，发现阿普顿层（电离层）<br>46、1948年：布莱克特（英国）改进威尔逊云雾室方法和由此在核物理和宇宙射线领域的发现<br>47、1949年：汤川秀树（日本）提出核子的介子理论并预言∏介子的存在<br>48、1950年：塞索·法兰克·鲍威尔（英国）发展研究核过程的照相方法，并发现π介子<br>49、1951年：科克罗夫特（英国）、沃尔顿（爱尔兰）用人工加速粒子轰击原子产生原子核嬗变<br>50、1952年：布洛赫、珀塞尔（美国）从事物质核磁共振现象的研究并创立原子核磁力测量法<br>51、1953年：泽尔尼克（荷兰）发明相衬显微镜<br>52、1954年：马克斯·玻恩（英国）在量子力学和波函数的统计解释及研究方面作出贡献；博特（德国）发明了符合计数法，用以研究原子核反应和γ射线<br>53、1955年：拉姆（美国）发明了微波技术，进而研究氢原子的精细结构；库什（美国）用射频束技术精确地测定出电子磁矩，创新了核理论<br>54、1956年：布拉顿、巴丁（犹太人）、肖克利（美国）发明晶体管及对晶体管效应的研究<br>55、1957年：李政道、杨振宁（美籍华人）发现弱相互作用下宇称不守衡，从而导致有关基本粒子的重大发现<br>56、1958年：切伦科夫、塔姆、弗兰克（苏联）发现并解释切伦科夫效应<br>57、1959年：塞格雷、欧文·张伯伦(OwenChamberlain)（美国）发现反质子<br>58、1960年：格拉塞（美国）发现气泡室，取代了威尔逊的云雾室<br>59、1961年：霍夫斯塔特（美国）关于电子对原子核散射的先驱性研究,并由此发现原子核的结构；穆斯堡尔（德国）从事γ射线的共振吸收现象研究并发现了穆斯堡尔效应<br>60、1962年：达维多维奇·朗道（苏联）关于凝聚态物质，特别是液氦的开创性理论<br>61、1963年：维格纳（美国）发现基本粒子的对称性及支配质子与中子相互作用的原理；梅耶夫人（美国人.犹太人）、延森（德国）发现原子核的壳层结构<br>62、1964年：汤斯（美国）在量子电子学领域的基础研究成果，为微波激射器、激光器的发明奠定理论基础；巴索夫、普罗霍罗夫（苏联）发明微波激射器<br>63、1965年：朝永振一郎（日本）、施温格、费因曼（美国）在量子电动力学方面取得对粒子物理学产生深远影响的研究成果<br>64、1966年：卡斯特勒（法国）发明并发展用于研究原子内光、磁共振的双共振方法<br>65、1967年：贝蒂（美国）核反应理论方面的贡献，特别是关于恒星能源的发现<br>66、1968年：阿尔瓦雷斯（美国）发展氢气泡室技术和数据分析，发现大量共振态<br>67、1969年：盖尔曼（美国）对基本粒子的分类及其相互作用的发现<br>68、1970年：阿尔文（瑞典）磁流体动力学的基础研究和发现，及其在等离子物理富有成果的应用；内尔（法国）关于反磁铁性和铁磁性的基础研究和发现<br>69、1971年：加博尔（英国）发明并发展全息照相法<br>70、1972年：巴丁、库柏、施里弗（美国）创立BCS超导微观理论<br>71、1973年：江崎玲于奈（日本）发现半导体隧道效应；贾埃弗（美国）发现超导体隧道效应；约瑟夫森（英国）提出并发现通过隧道势垒的超电流的性质，即约瑟夫森效应<br>72、1974年：马丁·赖尔（英国）发明应用合成孔径射电天文望远镜进行射电天体物理学的开创性研究；赫威斯（英国）发现脉冲星<br>73、1975年：阿格·N·玻尔、莫特尔森（丹麦）、雷恩沃特（美国）发现原子核中集体运动和粒子运动之间的联系，并且根据这种联系提出核结构理论<br>74、1976年：丁肇中、里希特（美国）各自独立发现新的J/ψ基本粒子<br>75、1977年：安德森、范弗莱克（美国）、莫特（英国）对磁性和无序体系电子结构的基础性研究<br>76、1978年：卡皮察（苏联）低温物理领域的基本发明和发现；彭齐亚斯、R·W·威尔逊（美国）发现宇宙微波背景辐射<br>77、1979年：谢尔登·李·格拉肖、史蒂文·温伯格（美国）、阿布杜斯·萨拉姆（巴基斯坦）关于基本粒子间弱相互作用和电磁作用的统一理论的贡献，并预言弱中性流的存在<br>78、1980年：克罗宁、菲奇（美国）发现电荷共轭宇称不守恒<br>79、1981年：西格巴恩（瑞典）开发高分辨率测量仪器以及对光电子和轻元素的定量分析；布洛姆伯根（美国）非线性光学和激光光谱学的开创性工作；肖洛（美国）发明高分辨率的激光光谱仪<br>80、1982年：K·G·威尔逊（美国）提出重整群理论，阐明相变临界现象<br>81、1983年：萨拉马尼安·强德拉塞卡（美国）提出强德拉塞卡极限，对恒星结构和演化具有重要意义的物理过程进行的理论研究；福勒（美国）对宇宙中化学元素形成具有重要意义的核反应所进行的理论和实验的研究<br>82、1984年：卡洛·鲁比亚（意大利）证实传递弱相互作用的中间矢量玻色子[[W+]],W-和Zc的存在；范德梅尔（荷兰）发明粒子束的随机冷却法，使质子-反质子束对撞产生W和Z粒子的实验成为可能<br>83、1985年：冯·克里津（德国）发现量子霍耳效应并开发了测定物理常数的技术<br>84、1986年：鲁斯卡（德国）设计第一台透射电子显微镜；比尼格（德国）、罗雷尔（瑞士）设计第一台扫描隧道电子显微镜<br>85、1987年：柏德诺兹（德国）、缪勒（瑞士）发现氧化物高温超导材料<br>86、1988年：莱德曼、施瓦茨、斯坦伯格（美国）产生第一个实验室创造的中微子束，并发现中微子，从而证明了轻子的对偶结构<br>87、1989年：拉姆齐（美国）发明分离振荡场方法及其在原子钟中的应用；德默尔特（美国）、保尔（德国）发展原子精确光谱学和开发离子陷阱技术<br>88、1990年：弗里德曼、肯德尔（美国）、理查·爱德华·泰勒（加拿大）通过实验首次证明夸克的存在<br>89、1991年：皮埃尔·吉勒德－热纳（法国）把研究简单系统中有序现象的方法推广到比较复杂的物质形式，特别是推广到液晶和聚合物的研究中<br>90、1992年：夏帕克（法国）发明并发展用于高能物理学的多丝正比室<br>91、1993年：赫尔斯、J·H·泰勒（美国）发现脉冲双星，由此间接证实了爱因斯坦所预言的引力波的存在<br>92、1994年：布罗克豪斯（加拿大）、沙尔（美国）在凝聚态物质研究中发展了中子衍射技术<br>93、1995年：佩尔（美国）发现τ轻子；莱因斯（美国）发现中微子<br>94、1996年：D·M·李、奥谢罗夫、R·C·理查森（美国）发现了可以在低温度状态下无摩擦流动的氦同位素<br>95、1997年：朱棣文、W·D·菲利普斯（美国）、科昂·塔努吉（法国）发明用激光冷却和捕获原子的方法<br>96、1998年：劳克林、霍斯特·路德维希·施特默、崔琦（美国）发现并研究电子的分数量子霍尔效应<br>97、1999年：H·霍夫特、韦尔特曼（荷兰）阐明弱电相互作用的量子结构<br>98、2000年：阿尔费罗夫（俄国）、克罗默（德国）提出异层结构理论，并开发了异层结构的快速晶体管、激光二极管；杰克·基尔比（美国）发明集成电路<br>99、2001年：克特勒（德国）、康奈尔、卡尔·E·维曼（美国）在“碱金属原子稀薄气体的玻色－爱因斯坦凝聚态”以及“凝聚态物质性质早期基本性质研究”方面取得成就<br>100、2002年：雷蒙德·戴维斯、里卡尔多·贾科尼（美国）、小柴昌俊（日本）“表彰他们在天体物理学领域做出的先驱性贡献，其中包括在“探测宇宙中微子”和“发现宇宙Ｘ射线源”方面的成就。”<br>101、2003年：阿列克谢·阿布里科索夫、安东尼·莱格特（美国）、维塔利·金茨堡（俄罗斯）“表彰三人在超导体和超流体领域中做出的开创性贡献。”<br>102、2004年：戴维·格罗斯（美国）、戴维·普利策（美国）和弗兰克·维尔泽克（美国），为表彰他们“对量子场中夸克渐进自由的发现。”<br>103、2005年：罗伊·格劳伯（美国）表彰他对光学相干的量子理论的贡献；约翰·霍尔（JohnL.Hall，美国）和特奥多尔·亨施（德国）表彰他们对基于激光的精密光谱学发展作出的贡献。<br>104、2006年：约翰·马瑟（美国）和乔治·斯穆特（美国）表彰他们发现了黑体形态和宇宙微波背景辐射的扰动现象。<br>105、2007年：法国科学家艾尔伯·费尔和德国科学家皮特·克鲁伯格，表彰他们发现巨磁电阻效应的贡献。<br>106、2008年：日本科学家南部阳一郎（YoichiroNambu），表彰他发现了亚原子物理的对称性自发破缺机制。日本物理学家小林诚（MakotoKobayashi），益川敏英（ToshihideMaskawa）提出了对称性破坏的物理机制，并成功预言了自然界至少三类夸克的存在。<br>107、2009年：美籍华裔物理学家高锟因为“在光学通信领域中光的传输的开创性成就”而获奖；美国物理学家韦拉德·博伊尔（WillardS.Boyle）和乔治·史密斯（GeorgeE.Smith）因“发明了成像半导体电路——电荷藕合器件图像传感器CCD”获此殊荣。<br>108、2010年：瑞典皇家科学院在斯德哥尔摩宣布，将2010年诺贝尔物理学奖授予英国曼彻斯特大学科学家安德烈·海姆和康斯坦丁·诺沃肖洛夫，以表彰他们在石墨烯材料方面的卓越研究。<br>109、2011年：美国加州大学伯克利分校天体物理学家萨尔·波尔马特、美国/澳大利亚物理学家布莱恩·施密特以及美国科学家亚当·里斯因“通过观测遥远超新星发现宇宙的加速膨胀”获得2011年诺贝尔物理学奖。<br>110、2012年：法国巴黎高等师范学院教授塞尔日·阿罗什、美国国家标准与技术研究院和科罗拉多大学波尔得分校教授大卫·维因兰德因“发现测量和操控单个量子系统的突破性实验方法”获得2012年诺贝尔物理学奖。<br>111、2013年：比利时理论物理学家弗朗索瓦·恩格勒和英国理论物理学家彼得·希格斯因希格斯玻色子（上帝粒子）的理论预言获2013年诺贝尔物理学奖。<br>112、2014年：日本科学家赤崎勇、天野浩和美籍日裔科学家中村修二，因发明蓝色发光二极管（LED）获2014年诺贝尔物理学奖。<br>113、2015年：日本科学家梶田隆章（Takaaki Kajita）和加拿大科学家阿瑟·麦克唐纳（Arthur B. McDonald），因在发现中微子振荡方面所作的贡献分享2015年诺贝尔物理学奖。<br>114、2016年：三位美国科学家戴维·索利斯、邓肯·霍尔丹和迈克尔·科斯特利茨，因在理论上发现了物质的拓扑相变以及在拓扑相变方面作出的理论贡献分享2016年诺贝尔物理学奖。<br>115、2017年：2017年诺贝尔物理学奖的获奖者为 雷纳·韦斯 (Rainer Weiss)，巴里·巴里什（Barry Clark Barish），基普·索恩(Kip S Thorne)，以表彰他们对LIGO探测装置的决定性贡献以及探测到引力波的存在。</p>
+          <p>1、1901年：威尔姆·康拉德·伦琴（德国）发现X射线<br>2、1902年：亨德瑞克·安图恩·洛伦兹（荷兰）、塞曼（荷兰）关于磁场对辐射现象影响的研究<br>3、1903年：安东尼·亨利·贝克勒尔（法国）发现天然放射性；皮埃尔·居里（法国）、玛丽·居里（波兰裔法国人）发现并研究放射性元素钋和镭<br>4、1904年：瑞利（英国）气体密度的研究和发现氩<br>5、1905年：伦纳德（德国）关于阴极射线的研究<br>6、1906年：约瑟夫·汤姆生（英国）对气体放电理论和实验研究作出重要贡献并发现电子<br>7、1907年：迈克尔逊（美国）发明光学干涉仪并使用其进行光谱学和基本度量学研究<br>8、1908年：李普曼（法国）发明彩色照相干涉法（即李普曼干涉定律）<br>9、1909年：伽利尔摩·马克尼（意大利）、布劳恩（德国）发明和改进无线电报；理查森（英国）从事热离子现象的研究，特别是发现理查森定律<br>10、1910年：范德华（荷兰）关于气态和液态方程的研究<br>11、1911年：维恩（德国）发现热辐射定律<br>12、1912年：达伦（瑞典）发明可用于同燃点航标、浮标气体蓄电池联合使用的自动调节装置<br>13、1913年：卡末林－昂内斯（荷兰）关于低温下物体性质的研究和制成液态氦<br>14、1914年：马克斯·凡·劳厄（德国）发现晶体中的X射线衍射现象<br>15、1915年：威廉·亨利·布拉格、威廉·劳伦斯·布拉格（英国）用X射线对晶体结构的研究<br>16、1916年：未颁奖<br>17、1917年：查尔斯·格洛弗·巴克拉（英国）发现元素的次级X辐射特性<br>18、1918年：马克斯·卡尔·欧内斯特·路德维希·普朗克（德国）对确立量子论作出巨大贡献<br>19、1919年：斯塔克（德国）发现极隧射线的多普勒效应以及电场作用下光谱线的分裂现象<br>20、1920年：纪尧姆（瑞士）发现镍钢合金的反常现象及其在精密物理学中的重要性<br>21、1921年：阿尔伯特·爱因斯坦（德国）他对数学物理学的成就，特别是光电效应定律的发现<br>22、1922年：尼尔斯·亨利克·大卫·玻尔（丹麦）关于原子结构以及原子辐射的研究<br>23、1923年：罗伯特·安德鲁·密立根（美国）关于基本电荷的研究以及验证光电效应<br>24、1924年：西格巴恩（瑞典）发现X射线中的光谱线<br>25、1925年：弗兰克·赫兹（德国）发现原子和电子的碰撞规律<br>26、1926年：佩兰（法国）研究物质不连续结构和发现沉积平衡<br>27、1927年：康普顿（美国）发现康普顿效应；威尔逊（英国）发明了云雾室，能显示出电子穿过空气的径迹<br>28、1928年：理查森（英国）研究热离子现象，并提出理查森定律<br>29、1929年：路易·维克多·德布罗意（法国）发现电子的波动性<br>30、1930年：拉曼（印度）研究光散射并发现拉曼效应<br>31、1931年：未颁奖<br>32、1932年：维尔纳·海森伯（德国）在量子力学方面的贡献<br>33、1933年：埃尔温·薛定谔（奥地利）创立波动力学理论；保罗·阿德里·莫里斯·狄拉克（英国）提出狄拉克方程和空穴理论<br>34、1934年：未颁奖<br>35、1935年：詹姆斯·查德威克（英国）发现中子<br>36、1936年：赫斯（奥地利）发现宇宙射线；安德森（美国）发现正电子<br>37、1937年：戴维森（美国）、乔治·佩杰特·汤姆生（英国）发现晶体对电子的衍射现象<br>38、1938年：恩利克·费米（意大利）发现由中子照射产生的新放射性元素并用慢中子实现核反应<br>39、1939年：欧内斯特·奥兰多·劳伦斯（美国）发明回旋加速器，并获得人工放射性元素<br>40、1940—1942年：未颁奖<br>41、1943年：斯特恩（美国）开发分子束方法和测量质子磁矩<br>42、1944年：拉比（美国）发明核磁共振法<br>43、1945年：沃尔夫冈·E·泡利（奥地利）发现泡利不相容原理<br>44、1946年：布里奇曼（美国）发明获得强高压的装置，并在高压物理学领域作出发现<br>45、1947年：阿普尔顿（英国）高层大气物理性质的研究，发现阿普顿层（电离层）<br>46、1948年：布莱克特（英国）改进威尔逊云雾室方法和由此在核物理和宇宙射线领域的发现<br>47、1949年：汤川秀树（日本）提出核子的介子理论并预言∏介子的存在<br>48、1950年：塞索·法兰克·鲍威尔（英国）发展研究核过程的照相方法，并发现π介子<br>49、1951年：科克罗夫特（英国）、沃尔顿（爱尔兰）用人工加速粒子轰击原子产生原子核嬗变<br>50、1952年：布洛赫、珀塞尔（美国）从事物质核磁共振现象的研究并创立原子核磁力测量法<br>51、1953年：泽尔尼克（荷兰）发明相衬显微镜<br>52、1954年：马克斯·玻恩（英国）在量子力学和波函数的统计解释及研究方面作出贡献；博特（德国）发明了符合计数法，用以研究原子核反应和γ射线<br>53、1955年：拉姆（美国）发明了微波技术，进而研究氢原子的精细结构；库什（美国）用射频束技术精确地测定出电子磁矩，创新了核理论<br>54、1956年：布拉顿、巴丁（犹太人）、肖克利（美国）发明晶体管及对晶体管效应的研究<br>55、1957年：李政道、杨振宁（美籍华人）发现弱相互作用下宇称不守衡，从而导致有关基本粒子的重大发现<br>56、1958年：切伦科夫、塔姆、弗兰克（苏联）发现并解释切伦科夫效应<br>57、1959年：塞格雷、欧文·张伯伦(OwenChamberlain)（美国）发现反质子<br>58、1960年：格拉塞（美国）发现气泡室，取代了威尔逊的云雾室<br>59、1961年：霍夫斯塔特（美国）关于电子对原子核散射的先驱性研究,并由此发现原子核的结构；穆斯堡尔（德国）从事γ射线的共振吸收现象研究并发现了穆斯堡尔效应<br>60、1962年：达维多维奇·朗道（苏联）关于凝聚态物质，特别是液氦的开创性理论<br>61、1963年：维格纳（美国）发现基本粒子的对称性及支配质子与中子相互作用的原理；梅耶夫人（美国人.犹太人）、延森（德国）发现原子核的壳层结构<br>62、1964年：汤斯（美国）在量子电子学领域的基础研究成果，为微波激射器、激光器的发明奠定理论基础；巴索夫、普罗霍罗夫（苏联）发明微波激射器<br>63、1965年：朝永振一郎（日本）、施温格、费因曼（美国）在量子电动力学方面取得对粒子物理学产生深远影响的研究成果<br>64、1966年：卡斯特勒（法国）发明并发展用于研究原子内光、磁共振的双共振方法<br>65、1967年：贝蒂（美国）核反应理论方面的贡献，特别是关于恒星能源的发现<br>66、1968年：阿尔瓦雷斯（美国）发展氢气泡室技术和数据分析，发现大量共振态<br>67、1969年：盖尔曼（美国）对基本粒子的分类及其相互作用的发现<br>68、1970年：阿尔文（瑞典）磁流体动力学的基础研究和发现，及其在等离子物理富有成果的应用；内尔（法国）关于反磁铁性和铁磁性的基础研究和发现<br>69、1971年：加博尔（英国）发明并发展全息照相法<br>70、1972年：巴丁、库柏、施里弗（美国）创立BCS超导微观理论<br>71、1973年：江崎玲于奈（日本）发现半导体隧道效应；贾埃弗（美国）发现超导体隧道效应；约瑟夫森（英国）提出并发现通过隧道势垒的超电流的性质，即约瑟夫森效应<br>72、1974年：马丁·赖尔（英国）发明应用合成孔径射电天文望远镜进行射电天体物理学的开创性研究；赫威斯（英国）发现脉冲星<br>73、1975年：阿格·N·玻尔、莫特尔森（丹麦）、雷恩沃特（美国）发现原子核中集体运动和粒子运动之间的联系，并且根据这种联系提出核结构理论<br>74、1976年：丁肇中、里希特（美国）各自独立发现新的J/ψ基本粒子<br>75、1977年：安德森、范弗莱克（美国）、莫特（英国）对磁性和无序体系电子结构的基础性研究<br>76、1978年：卡皮察（苏联）低温物理领域的基本发明和发现；彭齐亚斯、R·W·威尔逊（美国）发现宇宙微波背景辐射<br>77、1979年：谢尔登·李·格拉肖、史蒂文·温伯格（美国）、阿布杜斯·萨拉姆（巴基斯坦）关于基本粒子间弱相互作用和电磁作用的统一理论的贡献，并预言弱中性流的存在<br>78、1980年：克罗宁、菲奇（美国）发现电荷共轭宇称不守恒<br>79、1981年：西格巴恩（瑞典）开发高分辨率测量仪器以及对光电子和轻元素的定量分析；布洛姆伯根（美国）非线性光学和激光光谱学的开创性工作；肖洛（美国）发明高分辨率的激光光谱仪<br>80、1982年：K·G·威尔逊（美国）提出重整群理论，阐明相变临界现象<br>81、1983年：萨拉马尼安·强德拉塞卡（美国）提出强德拉塞卡极限，对恒星结构和演化具有重要意义的物理过程进行的理论研究；福勒（美国）对宇宙中化学元素形成具有重要意义的核反应所进行的理论和实验的研究<br>82、1984年：卡洛·鲁比亚（意大利）证实传递弱相互作用的中间矢量玻色子[[W+]],W-和Zc的存在；范德梅尔（荷兰）发明粒子束的随机冷却法，使质子-反质子束对撞产生W和Z粒子的实验成为可能<br>83、1985年：冯·克里津（德国）发现量子霍耳效应并开发了测定物理常数的技术<br>84、1986年：鲁斯卡（德国）设计第一台透射电子显微镜；比尼格（德国）、罗雷尔（瑞士）设计第一台扫描隧道电子显微镜<br>85、1987年：柏德诺兹（德国）、缪勒（瑞士）发现氧化物高温超导材料<br>86、1988年：莱德曼、施瓦茨、斯坦伯格（美国）产生第一个实验室创造的中微子束，并发现中微子，从而证明了轻子的对偶结构<br>87、1989年：拉姆齐（美国）发明分离振荡场方法及其在原子钟中的应用；德默尔特（美国）、保尔（德国）发展原子精确光谱学和开发离子陷阱技术<br>88、1990年：弗里德曼、肯德尔（美国）、理查·爱德华·泰勒（加拿大）通过实验首次证明夸克的存在<br>89、1991年：皮埃尔·吉勒德－热纳（法国）把研究简单系统中有序现象的方法推广到比较复杂的物质形式，特别是推广到液晶和聚合物的研究中<br>90、1992年：夏帕克（法国）发明并发展用于高能物理学的多丝正比室<br>91、1993年：赫尔斯、J·H·泰勒（美国）发现脉冲双星，由此间接证实了爱因斯坦所预言的引力波的存在<br>92、1994年：布罗克豪斯（加拿大）、沙尔（美国）在凝聚态物质研究中发展了中子衍射技术<br>93、1995年：佩尔（美国）发现τ轻子；莱因斯（美国）发现中微子<br>94、1996年：D·M·李、奥谢罗夫、R·C·理查森（美国）发现了可以在低温度状态下无摩擦流动的氦同位素<br>95、1997年：朱棣文、W·D·菲利普斯（美国）、科昂·塔努吉（法国）发明用激光冷却和捕获原子的方法<br>96、1998年：劳克林、霍斯特·路德维希·施特默、崔琦（美国）发现并研究电子的分数量子霍尔效应<br>97、1999年：H·霍夫特、韦尔特曼（荷兰）阐明弱电相互作用的量子结构<br>98、2000年：阿尔费罗夫（俄国）、克罗默（德国）提出异层结构理论，并开发了异层结构的快速晶体管、激光二极管；杰克·基尔比（美国）发明集成电路<br>99、2001年：克特勒（德国）、康奈尔、卡尔·E·维曼（美国）在“碱金属原子稀薄气体的玻色－爱因斯坦凝聚态”以及“凝聚态物质性质早期基本性质研究”方面取得成就<br>100、2002年：雷蒙德·戴维斯、里卡尔多·贾科尼（美国）、小柴昌俊（日本）“表彰他们在天体物理学领域做出的先驱性贡献，其中包括在“探测宇宙中微子”和“发现宇宙Ｘ射线源”方面的成就。”<br>101、2003年：阿列克谢·阿布里科索夫、安东尼·莱格特（美国）、维塔利·金茨堡（俄罗斯）“表彰三人在超导体和超流体领域中做出的开创性贡献。”<br>102、2004年：戴维·格罗斯（美国）、戴维·普利策（美国）和弗兰克·维尔泽克（美国），为表彰他们“对量子场中夸克渐进自由的发现。”<br>103、2005年：罗伊·格劳伯（美国）表彰他对光学相干的量子理论的贡献；约翰·霍尔（JohnL.Hall，美国）和特奥多尔·亨施（德国）表彰他们对基于激光的精密光谱学发展作出的贡献。<br>104、2006年：约翰·马瑟（美国）和乔治·斯穆特（美国）表彰他们发现了黑体形态和宇宙微波背景辐射的扰动现象。<br>105、2007年：法国科学家艾尔伯·费尔和德国科学家皮特·克鲁伯格，表彰他们发现巨磁电阻效应的贡献。<br>106、2008年：日本科学家南部阳一郎（YoichiroNambu），表彰他发现了亚原子物理的对称性自发破缺机制。日本物理学家小林诚（MakotoKobayashi），益川敏英（ToshihideMaskawa）提出了对称性破坏的物理机制，并成功预言了自然界至少三类夸克的存在。<br>107、2009年：美籍华裔物理学家高锟因为“在光学通信领域中光的传输的开创性成就”而获奖；美国物理学家韦拉德·博伊尔（WillardS.Boyle）和乔治·史密斯（GeorgeE.Smith）因“发明了成像半导体电路——电荷藕合器件图像传感器CCD”获此殊荣。<br>108、2010年：瑞典皇家科学院在斯德哥尔摩宣布，将2010年诺贝尔物理学奖授予英国曼彻斯特大学科学家安德烈·海姆和康斯坦丁·诺沃肖洛夫，以表彰他们在石墨烯材料方面的卓越研究。<br>109、2011年：美国加州大学伯克利分校天体物理学家萨尔·波尔马特、美国/澳大利亚物理学家布莱恩·施密特以及美国科学家亚当·里斯因“通过观测遥远超新星发现宇宙的加速膨胀”获得2011年诺贝尔物理学奖。<br>110、2012年：法国巴黎高等师范学院教授塞尔日·阿罗什、美国国家标准与技术研究院和科罗拉多大学波尔得分校教授大卫·维因兰德因“发现测量和操控单个量子系统的突破性实验方法”获得2012年诺贝尔物理学奖。<br>111、2013年：比利时理论物理学家弗朗索瓦·恩格勒和英国理论物理学家彼得·希格斯因希格斯玻色子（上帝粒子）的理论预言获2013年诺贝尔物理学奖。<br>112、2014年：日本科学家赤崎勇、天野浩和美籍日裔科学家中村修二，因发明蓝色发光二极管（LED）获2014年诺贝尔物理学奖。<br>113、2015年：日本科学家梶田隆章（Takaaki Kajita）和加拿大科学家阿瑟·麦克唐纳（Arthur B. McDonald），因在发现中微子振荡方面所作的贡献分享2015年诺贝尔物理学奖。<br>114、2016年：三位美国科学家戴维·索利斯、邓肯·霍尔丹和迈克尔·科斯特利茨，因在理论上发现了物质的拓扑相变以及在拓扑相变方面作出的理论贡献分享2016年诺贝尔物理学奖。<br>115、2017年：2017年诺贝尔物理学奖的获奖者为 雷纳·韦斯 (Rainer Weiss)，巴里·巴里什（Barry Clark Barish），基普·索恩(Kip S Thorne)，以表彰他们对LIGO探测装置的决定性贡献以及探测到引力波的存在。</p>
 <p>116、2018年：亚瑟·阿斯金（美国），杰哈·莫罗（法国），和唐娜·斯特里克兰（加拿大）。三人的获奖理由是：“用于激光物理领域的突破性发明”。委员会将一半授予Arthur Ashkin“用于光学镊子及其在生物系统中的应用”，另一半授予Gérard Mourou和Donna Strickland，“为他们生成高强度，超短光脉冲的方法”。</p>
 <p>117、2019年美国科学家詹姆斯·皮布尔斯因宇宙学相关研究而获得2019年诺贝尔物理学奖，瑞士科学家米歇尔·马约尔和迪迪埃·奎洛兹因首次发现太阳系外行星而获得2019年诺贝尔物理学奖</p>
 <p>118、2020年罗杰·彭罗斯（Roger Penrose），莱因哈德·根泽尔（Reinhard Genzel）和安德里亚·格兹（Andrea Ghez）共同获得2020年诺贝尔物理学奖，2020年诺贝尔物理学奖一半授予彭罗斯，因为发现黑洞的形成是对广义相对论的有力预测。另外一半授予根泽尔和格兹，因为他们在银河系中心发现了一个超大质量的致密天体。</p>
@@ -95,76 +199,118 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/02/15/nobelphysics/" data-id="ckznv6tvd0001xzzf9w9mdopj" class="article-share-link">Share</a>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
-      
-    </footer>
-  </div>
   
-</article>
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh- CN">
+    <link itemprop="mainEntityOfPage" href="http://jinneye.github.io/2022/01/04/try/">
 
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="jinneye">
+      <meta itemprop="description" content="">
+    </span>
 
-  
-    <article id="post-try" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/01/04/try/" class="article-date">
-  <time datetime="2022-01-04T01:50:18.000Z" itemprop="datePublished">2022-01-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/01/04/try/">try</a>
-    </h1>
-  
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jinneye的小屋">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/01/04/try/" class="post-title-link" itemprop="url">try</a>
+        </h2>
 
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-01-04 09:50:18" itemprop="dateCreated datePublished" datetime="2022-01-04T09:50:18+08:00">2022-01-04</time>
+            </span>
+
+          
+
+        </div>
       </header>
+
     
-    <div class="article-entry" itemprop="articleBody">
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-        
+          
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/01/04/try/" data-id="ckznv6tvg0002xzzf031e41sx" class="article-share-link">Share</a>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
-      
-    </footer>
-  </div>
   
-</article>
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh- CN">
+    <link itemprop="mainEntityOfPage" href="http://jinneye.github.io/2022/01/04/hello-world/">
 
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="jinneye">
+      <meta itemprop="description" content="">
+    </span>
 
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/01/04/hello-world/" class="article-date">
-  <time datetime="2022-01-03T23:41:25.845Z" itemprop="datePublished">2022-01-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/01/04/hello-world/">Hello World</a>
-    </h1>
-  
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jinneye的小屋">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/01/04/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+        </h2>
 
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-01-04 07:41:25" itemprop="dateCreated datePublished" datetime="2022-01-04T07:41:25+08:00">2022-01-04</time>
+            </span>
+
+          
+
+        </div>
       </header>
+
     
-    <div class="article-entry" itemprop="articleBody">
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
@@ -180,103 +326,174 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/01/04/hello-world/" data-id="ckznv6tvb0000xzzf224o0flt" class="article-share-link">Share</a>
-      
-      
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">jinneye</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">jinneye</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
     </footer>
   </div>
-  
-</article>
-
 
   
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
 
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
+<script src="/js/schemes/muse.js"></script>
 
-  
-    
 
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/02/">February 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">January 2022</a></li></ul>
-    </div>
-  </div>
+<script src="/js/next-boot.js"></script>
+
+
 
 
   
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2022/02/15/nobelphysics/">nobel physics</a>
-          </li>
-        
-          <li>
-            <a href="/2022/01/04/try/">try</a>
-          </li>
-        
-          <li>
-            <a href="/2022/01/04/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2022 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
 
 
   
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
   
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
 
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-  </div>
 </body>
 </html>
